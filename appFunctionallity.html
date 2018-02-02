@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            var element1 = document.getElementById("vezba1");
+            function onCLickPopupClass(){
+                var element1 = document.getElementById("vezba1");
+                element1.className += " popupClass";
+            }
+            function changeClass(){
+                document.getElementById("vezba1").classList.remove('popupClass');
+            }
+            window.onload = function(){
+                document.getElementById("iskBttn").addEventListener( 'click', changeClass);
+            }
+        </script>
+        
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+                font-family: sans-serif;
+            }
+            header{
+                width: 100%;
+                height: 400px;
+                background: #3255e7;
+                color: #FFF;
+                text-align: center;
+                background-attachment: fixed;
+            }
+            header h1{
+                padding-top: 180px;
+            }
+            body{
+                background: #DFDFFF;
+                height: 150vh;
+            }
+            main{
+                text-align:  center;
+                margin-top: 50px;
+            }
+            .pushKey{
+                background: #2267df;
+                border: none;
+                width: 100px;
+                height: 50px;
+                color: #FFF;
+                font-size: 1.5em;
+                margin-bottom: 50px
+            }
+            #vezba1.popupClass{
+                width: 60%;
+                height: 60%;
+                background: #FFF;
+                margin-left: 20%;
+                position: fixed;
+                top: 20%;
+                display: block;
+                color: #777;
+            }
+            .popupClass h1, h3{
+                width: 70%;
+                margin-left: 15%;
+            }
+            .popupClass h1{
+                margin-top: 70px;
+            }
+            #vezba1{
+                display: none;
+            }
+            .isk{
+                width: 140px;
+                height: 50px;
+                background: #DF2528;
+                font-size: 1.1em;
+                color: #FFF;
+                border: none;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <header>
+            <h1>Gym Assistant</h1>
+        </header>
+        
+        <main>
+            <button onClick="onCLickPopupClass()" class="pushKey">Vezba1</button>
+            <button onClick="onCLickPopupClass()" class="pushKey">Vezba2</button>
+            <button onClick="onCLickPopupClass()" class="pushKey">Vezba3</button>
+            <button onClick="onCLickPopupClass()" class="pushKey">Vezba4</button>
+            <button onClick="onCLickPopupClass()" class="pushKey">Vezba5</button>
+            
+            <section id="vezba1">
+                <h1>Ime Na Vezba</h1>
+                <img src="img/curls.jpg" />
+                <h3>Explanation and gains from doing curls... Text to fill this space up... Maximum of blank characters</h3>
+                <button id="iskBttn" onClick="close()" class="isk">Close Window</button>
+            </section>
+        </main>
+    </body>
+</html
