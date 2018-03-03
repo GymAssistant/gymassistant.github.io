@@ -1,6 +1,6 @@
 # gymassistant.github.io
 
-Veb stranata e izrabotena od Aleksandar Divitarov i Hristijan Rshmanov
+Veb stranata e izrabotena od Aleksandar Divitarov i Hristijan Rahmanov
 
 Kodot e napisan vo HTML5,CSS3
 
